@@ -40,7 +40,7 @@ const StyledHeader = styled.div`
 `;
 function Header() {
     return (
-        <StyleHeader>
+        <StyledHeader>
             {/* <img alt="banner" src="" /> */}
             <section className="user-info">
                 <img alt="fotinho-do-perfil" src={`https://github.com/${config.github}.png`} />
@@ -53,7 +53,7 @@ function Header() {
                     </p>
                 </div>
             </section>
-        </StyleHeader>
+        </StyledHeader>
     )
 }
 
