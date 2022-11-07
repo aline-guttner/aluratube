@@ -1,0 +1,21 @@
+{
+    "nome": "Aline Cegatto",
+    "job": "Estudante de desenvolvimento web",
+    "github": "aline-guttner",
+    "playlists": {
+        "jogos": [
+            {
+                "titulo": "Título",
+                "url": "url",
+                "thumb": "thumbnail"
+            }
+        ],
+        "front-end": [
+            {
+                "titulo": "Título",
+                "url": "url",
+                "thumb": "thumbnail"
+            }
+        ]
+    }
+}
