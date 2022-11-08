@@ -17,6 +17,7 @@ export const CSSReset = createGlobalStyle`
     min-height: 100%;
   }
   body {
+    overflow-x: hidden;
     display: flex;
     flex: 1;
   }

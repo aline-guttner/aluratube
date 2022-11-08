@@ -21,10 +21,8 @@ export const StyledTimeline = styled.div`
   section {
     width: 100%;
     padding: 0;
-    overflow: hidden;
     padding: 16px;
     div {
-      
       width: calc(100vw - 16px * 4);
       display: grid;
       grid-gap: 16px;

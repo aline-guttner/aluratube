@@ -1,20 +1,86 @@
 {
     "nome": "Aline Cegatto",
-    "job": "Estudante de desenvolvimento web",
+    "job": "Estudante de desenvolvimento web e apaixonada por pets",
     "github": "aline-guttner",
-    "playlists": {
-        "jogos": [
+    "capa": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1443&q=80",
+    "favoritos": {
+        "titulo": "Aluratubes Favoritos",
+        "tubers": [
             {
-                "titulo": "Título",
+                "tuber": "@gatodebotas",
+                "thumb": "https://images.unsplash.com/photo-1617857911779-8464eac4a07d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+                "url": "url"
+            },
+            {
+                "tuber": "@ocontodogato",
+                "thumb": "https://images.unsplash.com/photo-1637797124175-9e48c9112397?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80",
+                "url": "url"
+            },
+            {
+                "tuber": "@hackerdascachorra",
+                "thumb": "https://images.unsplash.com/photo-1589652717406-1c69efaf1ff8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+                "url": "url"
+            }
+        ]
+    },
+    "playlists": {
+        "Gatos": [
+            {
+                "titulo": "Meu gato é sensacional",
                 "url": "url",
-                "thumb": "thumbnail"
+                "thumb": "https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
+            },
+            {
+                "titulo": "Gato Unheco sendo imprevisível - TENTE NÃO RIR",
+                "url": "url",
+                "thumb": "https://images.unsplash.com/photo-1519052537078-e6302a4968d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+            },
+            {
+                "titulo": "FUNNY CATS COMPILATION 2022",
+                "url": "url",
+                "thumb": "https://images.unsplash.com/photo-1571566882372-1598d88abd90?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+            },
+            {
+                "titulo": "Gatos que parecem humanos (INACREDITÁVEL!)",
+                "url": "url",
+                "thumb": "https://images.unsplash.com/photo-1569591159212-b02ea8a9f239?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+            },
+            {
+                "titulo": "DICAS DE ROUPAS PARA GATOS",
+                "url": "url",
+                "thumb": "https://images.unsplash.com/photo-1606225457115-9b0de873c5db?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
+            },
+            {
+                "titulo": "Por que os gatos ronronam? - CURIOSIDADES FELINAS",
+                "url": "url",
+                "thumb": "https://images.unsplash.com/photo-1615111784767-4d7c527f32a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
             }
         ],
-        "front-end": [
+        "Cachorros": [
             {
-                "titulo": "Título",
+                "titulo": "Você não vai acreditar no que esse cachorro fez",
                 "url": "url",
-                "thumb": "thumbnail"
+                "thumb": "https://images.unsplash.com/photo-1554456854-55a089fd4cb2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            },
+            {
+                "titulo": "CÃES NA PRAIA",
+                "url": "url",
+                "thumb": "https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80"
+            },
+            {
+                "titulo": "SMART DOGS COMPILATION 2022",
+                "url": "url",
+                "thumb": "https://images.unsplash.com/photo-1477884213360-7e9d7dcc1e48?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            },
+            {
+                "titulo": "SMART DOGS COMPILATION 2021",
+                "url": "url",
+                "thumb": "https://images.unsplash.com/photo-1534361960057-19889db9621e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            },
+            {
+                "titulo": "POR QUE CÃES GOSTAM DE MORDER A GENTE? (EXPLICADO)",
+                "url": "url",
+                "thumb": "https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=394&q=80"
             }
         ]
     }
