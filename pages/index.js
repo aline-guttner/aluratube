@@ -3,8 +3,10 @@ import styled from "styled-components";
 import { CSSReset } from "../src/components/CSSReset";
 import Menu from "../src/components/Menu";
 import { StyledTimeline } from "../src/components/Timeline";
+import { useState } from "react";
 
 function HomePage() {
+    const [valorDaBusca, setValorDaBusca] = useState("");
     return (
         <>
             <CSSReset />
@@ -14,9 +16,9 @@ function HomePage() {
                 flex: 1,
                 // backgroundColor: "red",
             }}>
-                <Menu />
+                <Menu valorDaBusca={valorDaBusca} setValorDaBusca={setValorDaBusca} />
                 <Header capa={config.capa} />
-                <Timeline playlists={config.playlists} />
+                <Timeline valorDaBusca={valorDaBusca} playlists={config.playlists} />
                 <TubersFavoritos favoritos={config.favoritos} />
             </div>
         </>
@@ -24,20 +26,34 @@ function HomePage() {
 }
 
 
+// const StyledHeader = styled.div`
+//     section{
+//         height: 300px;     
+//         margin-top: 50px; 
+//     }
+//     .foto-perfil {
+//         width: 80px;
+//         height: 80px;
+//         border-radius: 50%;
+//     }
+//     .foto-capa{
+//         height: 230px;
+//         width: 100%;
+//         object-fit: cover;
+//     }
+//     .user-info {
+//         display: flex;
+//         align-items: center;
+//         width: 100%;
+//         padding: 16px 32px;
+//         gap: 16px;
+//     }
+// `;
 const StyledHeader = styled.div`
-    section{
-        height: 300px;     
-        margin-top: 50px; 
-    }
-    .foto-perfil {
+    img {
         width: 80px;
         height: 80px;
         border-radius: 50%;
-    }
-    .foto-capa{
-        height: 60%;
-        width: 100%;
-        object-fit: cover;
     }
     .user-info {
         display: flex;
@@ -47,13 +63,18 @@ const StyledHeader = styled.div`
         gap: 16px;
     }
 `;
-function Header(props) {
+const StyledBanner = styled.div`
+    background-color: blue;
+    background-image: url(${({ capa }) => capa});
+    /* background-image: url(${config.bg}); */
+    height: 230px;
+`;
+function Header({ capa }) {
     return (
         <StyledHeader>
-            {/* <img alt="banner" src="" /> */}
-            <section >
-                <img src={props.capa} className="foto-capa" alt="foto de capa" />
-                <div className="user-info">
+            <StyledBanner capa={capa} />
+            <section className="user-info" >
+                <div >
                     <img alt="fotinho-do-perfil" className="foto-perfil" src={`https://github.com/${config.github}.png`} />
                     <div>
                         <h2>
@@ -69,28 +90,34 @@ function Header(props) {
     )
 }
 
-function Timeline(props) {
+function Timeline({ valorDaBusca, ...props }) {
     const playlistNames = Object.keys(props.playlists);
     //Statement
     //Retorno por expressão (React)
     return (
-        <StyledTimeline>{playlistNames.map((playlistName, index) => {
+        <StyledTimeline>{playlistNames.map((playlistName) => {
             const videos = props.playlists[playlistName];
 
             return (
-                <section key={index}>
+                <section key={playlistName}>
                     <h2>{playlistName}</h2>
                     <div>
-                        {videos.map((video, i) => {
-                            return (
-                                <a key={i} href={video.url}>
-                                    <img alt="titulo" src={video.thumb} />
-                                    <span>
-                                        {video.titulo}
-                                    </span>
-                                </a>
-                            )
-                        })}
+                        {videos
+                            .filter((video) => {
+                                const tituloNormalized = video.titulo.toLowerCase();
+                                const valorDaBuscaNormalized = valorDaBusca.toLowerCase();
+                                return tituloNormalized.includes(valorDaBuscaNormalized)
+                            })
+                            .map((video) => {
+                                return (
+                                    <a key={video.url} href={video.url}>
+                                        <img alt="titulo" src={video.thumb} />
+                                        <span>
+                                            {video.titulo}
+                                        </span>
+                                    </a>
+                                )
+                            })}
                     </div>
                 </section>
             )
@@ -134,14 +161,13 @@ img{
 `
 function TubersFavoritos(props) {
     const tubers = props.favoritos.tubers
-    console.log(tubers)
     return (
         <StyledTubers>
             <h2>AluraTubers Favoritos</h2>
             <div className="tubers">
-                {tubers.map((tuber, index) => {
+                {tubers.map((tuber) => {
                     return (
-                        <div className="tuber" key={index}>
+                        <div className="tuber" key={tuber.tuber}>
                             <img src={tuber.thumb} alt="thumbnail" />
                             <p>{tuber.tuber}</p>
                         </div>
