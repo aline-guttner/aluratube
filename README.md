@@ -1,40 +1,14 @@
 # Aluratube
-![Alt Text](https://img.shields.io/badge/lincense-MIT-green) 
-
-## PT-BR 🇧🇷
 
 :movie_camera: Site baseado no YouTube, construído durante a Imersão React da Alura
 
-### Contribuindo 
-Quer contribuir com o projeto? Confira o [passo a passo](https://github.com/aline-guttner/aluratube/blob/main/CONTRIBUTING)
+| :placard: Vitrine.Dev |     |
+| -------------  | --- |
+| :sparkles: Nome        | **Aluratube**
+| :label: Tecnologias | React.js, Next.js, styled-components (tecnologias utilizadas)
+| :rocket: URL         | aluratube-ukyh.vercel.app/
+| :fire: Desafio     | https://www.alura.com.br/imersao-react
 
-### Versionamento
+<!-- Inserir imagem com a #vitrinedev ao final do link -->
+![image](https://user-images.githubusercontent.com/101731779/200959488-78135847-b223-44a9-80b2-da1962eefd8c.png#vitrinedev)
 
-Esse projeto não possui um sistema de versionamento
-
-### Histórico
-
-As alterações podem ser acompanhadas através da aba [releases](https://github.com/aline-guttner/aluratube/releases)
-
-### Licença
-
-[MIT Lincese](https://github.com/aline-guttner/aluratube/blob/main/LICENSE) © Aline Cegatto
-
-## en-US 🇺🇸
-
-:movie_camera: Website based on YouTube, created during the React immersion brought by Alura
-
-### Contributing
-Want to contribute to this project? Take a look at our [step by step](https://github.com/aline-guttner/aluratube/blob/main/CONTRIBUTING)
-
-### Versioning
-
-This project does not have a versioning system
-
-### History
-
-See [releases](https://github.com/aline-guttner/aluratube/releases) for detailed changelog
-
-### License
-
-[MIT Lincese](https://github.com/aline-guttner/aluratube/blob/main/LICENSE) © Aline Cegatto
