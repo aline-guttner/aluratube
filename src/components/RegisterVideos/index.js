@@ -8,17 +8,13 @@ function useForm(propsDoForm) {
             let thumb = ''
             let value = e.target.value
             const name = e.target.name
-            console.log(value.slice(0, 3))
+
             if (value.slice(0, 3) === 'www') {
                 value = `https://${value}`
-                console.log(value)
             }
             if (value.slice(0, 32) === 'https://www.youtube.com/watch?v=') {
                 const id = value.slice(value.indexOf("?") + 3)
                 thumb = `http://img.youtube.com/vi/${id}/hqdefault.jpg`
-                console.log(thumb)
-            } else {
-                console.log('nao inclui')
             }
 
             setValues({
