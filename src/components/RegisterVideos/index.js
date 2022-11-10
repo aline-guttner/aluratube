@@ -6,9 +6,13 @@ function useForm(propsDoForm) {
     return {
         values, handleChange: (e) => {
             let thumb = ''
-            const value = e.target.value
+            let value = e.target.value
             const name = e.target.name
-            console.log(value.slice(0, 32))
+            console.log(value.slice(0, 3))
+            if (value.slice(0, 3) === 'www') {
+                value = `https://${value}`
+                console.log(value)
+            }
             if (value.slice(0, 32) === 'https://www.youtube.com/watch?v=') {
                 const id = value.slice(value.indexOf("?") + 3)
                 thumb = `http://img.youtube.com/vi/${id}/hqdefault.jpg`
@@ -52,8 +56,8 @@ export default function RegisterVideo() {
                         <button type="button" className="close-modal" onClick={() => setFormVisivel(false)}>
                             X
                         </button>
-                        <input placeholder="Título do vídeo" value={formCadastro.values.titulo} onChange={formCadastro.handleChange} name="titulo" />
-                        <input placeholder="URL" value={formCadastro.values.url} onChange={formCadastro.handleChange} name="url" />
+                        <input required minLength={1} placeholder="Título do vídeo" value={formCadastro.values.titulo} onChange={formCadastro.handleChange} name="titulo" />
+                        <input required minLength={38} placeholder="URL" value={formCadastro.values.url} onChange={formCadastro.handleChange} name="url" />
                         {formCadastro.values.thumb && <img src={formCadastro.values.thumb} alt="thumbnail" />}
                         <button type="submit">
                             Cadastrar
