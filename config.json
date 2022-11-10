@@ -3,6 +3,7 @@
     "job": "Estudante de desenvolvimento web e apaixonada por pets",
     "github": "aline-guttner",
     "capa": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1443&q=80",
+    "inscritos": "480 mil",
     "favoritos": {
         "titulo": "Aluratubes Favoritos",
         "tubers": [
@@ -27,7 +28,7 @@
         "Gatos": [
             {
                 "titulo": "Meu gato é sensacional",
-                "url": "jkl",
+                "url": "/video",
                 "thumb": "https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
             },
             {
