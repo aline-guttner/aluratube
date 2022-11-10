@@ -8,8 +8,8 @@ function useForm(propsDoForm) {
             let thumb = ''
             const value = e.target.value
             const name = e.target.name
-
-            if (value.includes('https://www.youtube.com/')) {
+            console.log(value.slice(0, 32))
+            if (value.slice(0, 32) === 'https://www.youtube.com/watch?v=') {
                 const id = value.slice(value.indexOf("?") + 3)
                 thumb = `http://img.youtube.com/vi/${id}/hqdefault.jpg`
                 console.log(thumb)
