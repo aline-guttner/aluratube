@@ -5,7 +5,7 @@
 | :placard: Vitrine.Dev |     |
 | -------------  | --- |
 | :sparkles: Nome        | **Aluratube**
-| :label: Tecnologias | React.js, Next.js, styled-components (tecnologias utilizadas)
+| :label: Tecnologias | React.js, Next.js, styled-components, supabase (tecnologias utilizadas)
 | :rocket: URL         | aluratube-ukyh.vercel.app/
 | :fire: Desafio     | https://www.alura.com.br/imersao-react
 
