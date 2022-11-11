@@ -72,4 +72,7 @@ export const StyledRegisterVideo = styled.div`
     padding: 2px;
     margin-bottom: 10px;
   }
+  select{
+    margin: 10px 0;
+  }
 `;
