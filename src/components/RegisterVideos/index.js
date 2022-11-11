@@ -19,13 +19,19 @@ function useForm(propsDoForm) {
             if (value.slice(0, 32) === 'https://www.youtube.com/watch?v=') {
                 const id = value.slice(value.indexOf("?") + 3)
                 thumb = `http://img.youtube.com/vi/${id}/hqdefault.jpg`
+                setValues({
+                    ...values,
+                    [name]: value,
+                    thumb: thumb
+                })
+            } else {
+                setValues({
+                    ...values,
+                    [name]: value,
+                })
             }
 
-            setValues({
-                ...values,
-                [name]: value,
-                thumb: thumb
-            })
+
 
         },
         clearForm() {
