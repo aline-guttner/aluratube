@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { StyledRegisterVideo } from "./styles";
 import { supabase } from "../../services/videoService";
 import config from "../../../config.json";
