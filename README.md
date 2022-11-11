@@ -19,7 +19,7 @@ Dark mode
 Formulário de postagem
 ![image](https://user-images.githubusercontent.com/101731779/201400298-618c673e-8820-43fb-83ac-44bd95b39169.png)
 
-* ATENÇÃO: NENHUM DOS VÍDEOS INCORPORADOS NESSE SITE É MEU. SE VOCÊ CLICAR NAS IMAGENS, SERÁ REDIRECIONADO PARA O LINK ORIGINAL DO YOUTUBE.
+
 
 
 
